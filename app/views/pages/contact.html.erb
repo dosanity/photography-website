@@ -1,7 +1,28 @@
-<h1>Pages#contact</h1>
+<h1>Contact</h1>
 
-<p><%= number_to_phone "5555555555" %></p>
+<hr>
 
-<p><%= number_to_currency "500" %></p>
+<div class="row">
+  <div class="col-md-7">
+    <h5>Phone</h5>
+    
+    <p><%= number_to_phone "8016527975" %></p>
+    
+    <h5>Email</h5>
+    
+    <p><%= mail_to "anthonydo11@yahoo.com", "anthonydo11@yahoo.com" %>
+    </p>
+    
+    <h5>Price</h5>
+    
+    <p><%= number_to_currency "30" %> per shoot</p>
+    
+    <p>Based in Salt Lake City</p>
+    
+  </div>
 
-<p><%= number_with_delimiter "8012313211.4" %></p>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386733.0902058772!2d-112.20067517885593!3d40.77626911541092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87523d9488d131ed%3A0x5b53b7a0484d31ca!2sSalt+Lake+City%2C+UT!5e0!3m2!1sen!2sus!4v1499298745304"
+    width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
