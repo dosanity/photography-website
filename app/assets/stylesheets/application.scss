@@ -1,5 +1,5 @@
 @import "bootstrap";
-
+@import "font-awesome";
 /*
  * Globals
  */
@@ -184,3 +184,21 @@ body {
    float: none;
  }
  
+.social-links li {
+  font-size: 2.5em;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+/*body {
+    background-image: url(https://static.pexels.com/photos/26171/pexels-photo.jpg);
+    background-position: center top;
+    background-size: cover;
+}*/
+
+.app-nav span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
