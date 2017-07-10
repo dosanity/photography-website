@@ -1,7 +1,19 @@
 <h1>About</h1>
+
 <hr>
-<p>Just an 18 year old photographer, adventurer, and student trying to experience life.
-   Love to create new memories with new friends and capture them through a lens.  
-   Follow my adventures on social media or contact me.
-   </p>
-   <%= link_to "Contact", contact_path, class: "btn btn-lg btn-secondary" %>
+
+<div class="row">
+  <div class="col-md-4">
+  
+  <%= image_tag "Profile.jpg", width: 300, alt: "profile image" %>
+  </div>
+  
+  <div class="col-md-8">
+     <p>Just an 18 year old photographer, adventurer, and student trying to experience life.
+     Love to create new memories with new friends and capture them through a lens.  
+     Follow my adventures on social media or contact me.
+     </p>
+     <%= link_to "Contact", contact_path, class: "btn btn-lg btn-secondary" %>
+  </div>
+</div>
+
