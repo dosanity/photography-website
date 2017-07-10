@@ -23,3 +23,6 @@ class Portfolio < ApplicationRecord
     self.thumb_image ||= Placeholder.image_generator(height: '350', width: '200')
   end
 end
+
+
+
