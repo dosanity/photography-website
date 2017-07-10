@@ -29,7 +29,6 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
 }
 body {
   color: #fff;
@@ -192,12 +191,6 @@ h1 {
   font-size: 55px;
 }
 
-body {
-    background-image: url(https://cdn.assets.newmarketholidays.co.uk/WS_Images/holidays/1000x440/sh_262234709-Northern-Lights-2000x1200.jpg);
-    background-position: center top;
-    background-size: cover;
-}
-
 .app-nav span {
   /*margin-left: 15px;
   margin-right: 15px;*/
@@ -208,5 +201,21 @@ body {
   margin-right: 15px;
 }
 
-/*https://static.pexels.com/photos/26171/pexels-photo.jpg*/
-/*https://cdn.assets.newmarketholidays.co.uk/WS_Images/holidays/1000x440/sh_262234709-Northern-Lights-2000x1200.jpg*/
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('Northernlights.jpg') no-repeat;
+  background-size: cover;
+}
+
+.app-footer {
+  color: white;
+}
