@@ -12,4 +12,3 @@ module SocialTool
     end
   end
 end
-
