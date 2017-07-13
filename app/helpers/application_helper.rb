@@ -44,7 +44,7 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Connection'
+        title: 'Live'
       },
     ]
   end
