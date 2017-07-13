@@ -1,10 +1,12 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
+  
   <div class="sidebar-module sidebar-module-inset">
     <h4><b>Last Adventures</b></h4>
     <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12654.901718679843!2d-113.1529244!3d37.5379692!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc3ca4fb9f754ff6d!2sKanarraville+Falls!5e0!3m2!1sen!2sus!4v1499542414851" 
     width="300" height="300" frameborder="0" style="border:0"allowfullscreen></iframe>
         </p>
   </div>
+  
   <div class="sidebar-module">
     <h4>Social</h4>
     <ol class="list-unstyled social-links">
@@ -12,5 +14,11 @@
       <li><a href="https://www.facebook.com/anthony.do.1420"><%= fa_icon "facebook" %></a></li>
       <li><a href="https://www.twitter.com/do_sanity"><%= fa_icon "twitter" %></a></li>
     </ol>
+    
+    <h4>Topics</h4>
+      <% @side_bar_topics.each do |topic| %>
+        <p><%= link_to topic.title, topic_path(topic) %></p>
+    <% end %>
+    
   </div>
 </div>
