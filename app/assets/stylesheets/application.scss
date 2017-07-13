@@ -182,6 +182,7 @@ body {
    width: 22rem;
    margin: 0 auto;
    float: none;
+   opacity: 0.8;
  }
  
 .social-links li {
@@ -192,6 +193,9 @@ h1 {
   font-size: 55px;
 }
 
+.card {
+   opacity: 0.8;
+}
 .app-nav span {
   /*margin-left: 15px;
   margin-right: 15px;*/
