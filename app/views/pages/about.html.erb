@@ -1,9 +1,9 @@
-<div class="app-card-container">
+<div class="about-container">
   <div class="card">
     <h1>About</h1>
-
+  
     <hr>
-
+  
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "Profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
@@ -14,7 +14,34 @@
          Love to create new memories with new friends and capture them through a lens.  
          Follow my adventures on social media or contact me.
          </p>
-         <%= link_to "Contact", contact_path, class: "btn btn-lg btn-info" %>
+         
+        <p>
+           <%= link_to "Contact", contact_path, class: "btn btn-primary" %>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#camera"
+            aria-expanded="false"
+            aria-controler="camera"
+          >
+            Camera
+          </button>
+          
+          <%= link_to "Portfolio", portfolios_path, class: "btn btn-primary" %>
+          
+        </p>
+  
+        <p>
+          <div class="collapse" id="camera">
+            <div class="card card-block">
+              Camera
+            </div>
+          </div>
+  
+          <div class="collapse" id="contact">
+          </div>
+        </p>
       </div>
     </div>
   </div>

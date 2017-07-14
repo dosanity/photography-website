@@ -191,6 +191,7 @@ body {
 
 h1 {
   font-size: 55px;
+  font-family: Segoe UI Semibold;
 }
 
 .card {
@@ -254,4 +255,16 @@ h1 {
 
 .app-card-container a {
   color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.about-container > .card {
+  padding: 40px;
+  color: black;
+  text-align: left;
+  font-family: sans-serif;
 }
