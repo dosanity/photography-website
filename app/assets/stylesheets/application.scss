@@ -43,7 +43,8 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6 {
+h6, .h6,
+.btn1 {
   font-family: 'Playfair Display', serif;
 }
 
@@ -179,6 +180,8 @@ h6, .h6 {
  .card-block {
    color: black;
    text-align: left;
+   margin-top: 5px;
+   margin-bottom: 5px;
  }
  
  .auth-links a {
@@ -202,7 +205,6 @@ h6, .h6 {
 
 h1 {
   font-size: 55px;
-  font-family: 'Playfair Display', serif;
 }
 
 .card {
@@ -268,16 +270,10 @@ h1 {
   color: blue;
 }
 
-.card-block {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
 .about-container > .card {
   padding: 40px;
   color: black;
   text-align: left;
-  font-family: sans-serif;
 }
 
 .skill {
