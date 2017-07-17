@@ -1,19 +1,66 @@
-<h1>About</h1>
-
-<hr>
-
-<div class="row">
-  <div class="col-md-4">
+<div class="about-container">
+  <div class="card">
+    <h1>About</h1>
   
-  <%= image_tag "Profile.jpg", width: 300, alt: "profile image" %>
-  </div>
+    <hr>
   
-  <div class="col-md-8">
-     <p>Just an 18 year old photographer, adventurer, and student trying to experience life.
-     Love to create new memories with new friends and capture them through a lens.  
-     Follow my adventures on social media or contact me.
-     </p>
-     <%= link_to "Contact", contact_path, class: "btn btn-lg btn-secondary" %>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "Profile.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilized %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilized %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+  
+      <div class="col-md-8">
+         <p>Just an 18 year old photographer, adventurer, and student trying to experience life.
+         Love to create new memories with new friends and capture them through a lens.  
+         Follow my adventures on social media or contact me.
+         </p>
+         
+        <p>
+           <%= link_to "Contact", contact_path, class: "btn btn-primary btn1" %>
+          <button
+            class="btn btn-primary btn1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#camera"
+            aria-expanded="false"
+            aria-controller="camera"
+          >
+            Camera
+          </button>
+          
+          <%= link_to "Portfolio", portfolios_path, class: "btn btn-primary btn1" %>
+          
+        </p>
+  
+        <p>
+          <div class="collapse" id="camera">
+            <div class="card card-block">
+              Camera
+            </div>
+          </div>
+  
+          <div class="collapse" id="contact">
+          </div>
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
