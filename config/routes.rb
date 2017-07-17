@@ -16,9 +16,11 @@ Rails.application.routes.draw do
     member do
       get :toggle_status
     end
+    resources :comment
+    
   end
 
   mount ActionCable.server => '/cable'
-
   root to: 'pages#home'
+
 end
