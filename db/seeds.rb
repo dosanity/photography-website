@@ -12,7 +12,7 @@ User.create!(
   email: "test@test.com",
   password: "123456",
   password_confirmation: "123456",
-  name: "Regular User",
+  name: "Tony User",
 )
 
 puts "1 Regular user created"
@@ -75,8 +75,8 @@ end
 
   1.times do |portfolio_item|
     Portfolio.create!(
-      title: "Portfolio title: #{portfolio_item}",
-      subtitle: "Angular",
+      title: "Adventures",
+      subtitle: "Travels",
       body: "Default",
       main_image: "http://via.placeholder.com/600x400" ,
       thumb_image: "http://via.placeholder.com/350x200"

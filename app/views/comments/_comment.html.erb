@@ -10,12 +10,13 @@
           <div>
             <%= comment.content %>
           </div>
-
+          
           <div class="comment-attribution">
             Comment posted by <span class="comment-name"><%= comment.user.first_name %></span> <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago
             
           </div>
-          <%= link_to fa_icon('trash'), blog_comment_path(@blog, comment), method: :delete if comment.user_id == current_user.id %> 
+          
+           <%= link_to fa_icon('trash'), blog_comment_path(@blog, comment), method: :delete if comment.user_id == current_user.id %>
         </div>
       </div>
     </div>

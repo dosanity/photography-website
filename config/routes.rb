@@ -16,11 +16,12 @@ Rails.application.routes.draw do
     member do
       get :toggle_status
     end
-    resources :comment
-    
+    resources :comment 
   end
-
-  mount ActionCable.server => '/cable'
+  
+  post '/blogs/:blog_id/comment' => 'comment#create', :as => 'create_blog_comment'
+  
+  #mount ActionCable.server => '/cable'
+  
   root to: 'pages#home'
-
 end
