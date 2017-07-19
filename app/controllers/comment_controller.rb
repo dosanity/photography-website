@@ -6,7 +6,7 @@ class CommentController < ApplicationController
     @comment.user_id = current_user.id
     @comment.save
     if @comment.save
-      redirect_to blog_path(@blog)
+      redirect_to blog_path(@blog), :notice => 'Comment Posted'
     else
       redirect_to :back
     end
