@@ -15,12 +15,12 @@ class CommentController < ApplicationController
   
   def destroy
       @comment = @blog.comments.find(params[:id])
-    if @comment.user_id == current_user.id
       @comment.destroy 
-      redirect_to blog_path(@blog), :notice => 'Comment Deleted' 
-   else
-      redirect_to blog_path(@blog), :notice => "Cannot Delete Comment"
-    end
+      if @comment.destroy
+        redirect_to blog_path(@blog), :notice => 'Comment Deleted' 
+      else
+        redirect_to :back
+      end
   end
   
   private
