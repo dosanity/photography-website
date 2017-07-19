@@ -1,7 +1,7 @@
 <% unless current_user.is_a? GuestUser %>
   <%= form_for @comment, :url => create_blog_comment_path(@blog) do |f| %>
     <div class="form-group">
-
+      <p><b><%= f.label :comments %>:</b></p>
       <%= f.text_area :content, class: 'form-control' %>
       
     </div>
