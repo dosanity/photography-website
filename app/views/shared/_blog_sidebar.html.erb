@@ -4,18 +4,18 @@
     <h4><b>FAVORITE ADVENTURE</b></h4>
     <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.1009756447847!2d-112.94908758469683!3d37.269032579854674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80cac3d63de4e197%3A0xc7cc7a1f137357ee!2sAngels+Landing!5e0!3m2!1sen!2sus!4v1500143129624" 
     width="250" height="300" frameborder="0" style="border:0"allowfullscreen></iframe>
-        </p>
+    </p>
   </div>
   
   <hr>
   
   <%= source_helper("alert alert-info blog-sidebar-source") %>
-  
-  <h4><b>► TOPICS</b></h4>
-    <% @side_bar_topics.each do |topic| %>
-      <p><%= link_to topic.title, topic_path(topic) %></p>
-  <% end %>
-  
+  <div class="sidebar-module">
+    <h4><b>► TOPICS</b></h4>
+    <% topics_helper.each do |t|%>
+      <%= t.html_safe %>
+    <% end %>
+  </div>
   
   <div class="sidebar-module">
     <h4><b>► SOCIAL</b></h4>

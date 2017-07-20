@@ -26,4 +26,24 @@ module BlogsHelper
   def blog_status_color blog
     'color: red;' if blog.draft?
   end
+  
+  def topics_helper
+    link = ''
+    
+    if(action_name == "index" || (controller_name == "topics" && action_name == "show"))
+       Topic.all.each do |topic|
+         link += "<p>"
+         link += link_to topic.title, topic_path(topic)
+         link += "</p> "
+       end
+    elsif(action_name == "show")
+        @side_bar_topics.each do |topic|
+          link += "<p>"
+          link += link_to topic.title, topic_path(topic)
+          link += "</p> "
+      end
+    end
+    
+    link.split
+  end
 end
