@@ -235,7 +235,7 @@ h1 {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('Timpanogos.jpg') no-repeat;
   background-size: cover;
-  background-attachment:scroll;
+  background-attachment: scroll;
 }
 
 .app-footer {
@@ -308,7 +308,7 @@ h1 {
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 335px;}
+  to{width: 325px;}
 }
 
 .cards {
