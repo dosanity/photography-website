@@ -31,6 +31,8 @@ html,
 body {
   height: 100%;
   font-family: 'Raleway', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 body {
   color: #fff;
@@ -107,7 +109,7 @@ h6, .h6,
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 800px) {
   .masthead-brand {
     float: left;
   }
@@ -143,7 +145,7 @@ h6, .h6,
  * Affix and center
  */
 
-@media (min-width: 40em) {
+@media (min-width: 800px) {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
@@ -165,7 +167,7 @@ h6, .h6,
   }
 }
 
-@media (min-width: 62em) {
+@media (min-width: 800px) {
   .masthead,
   .mastfoot,
   .cover-container {
@@ -282,10 +284,6 @@ h1 {
 }
 
 /* Global */
-html{
-  min-height: 100%;
-  overflow: hidden;
-}
 
 .line-1{
     position: relative;
@@ -310,4 +308,9 @@ html{
 @keyframes typewriter{
   from{width: 0;}
   to{width: 340px;}
+}
+
+.cards {
+  opacity: 0.5;
+  text-align: center;
 }

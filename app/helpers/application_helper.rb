@@ -44,10 +44,38 @@ module ApplicationHelper
       },
       {
         url: tech_news_path,
-        title: 'Live'
+        title: 'Central'
       },
     ]
   end
+  
+  def nav1_items
+    [
+      {
+          url: root_path,
+          title: 'Home'
+        },
+      {
+          url: portfolios_path,
+          title: 'Portfolio'
+        },
+      {
+          url: contact_path,
+          title: 'Contact'
+        },
+      ]
+  end
+
+  def nav1_helper style, tag_type
+    nav_links = ''
+
+    nav1_items.each do |item|
+      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
+  end
+
+    nav_links.html_safe
+  end
+
 
   def nav_helper style, tag_type
     nav_links = ''
@@ -74,5 +102,8 @@ module ApplicationHelper
   def alert_generator msg
     js add_gritter(msg, title: "Anthony Do Portfolio", sticky: false)
   end
-
+  
+  def home_path
+    @disable_nav = true
+  end
 end

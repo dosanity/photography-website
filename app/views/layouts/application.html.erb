@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
@@ -31,8 +31,9 @@
              poster: 'Black.jpg'
             )
             %>
-          
-          <%= render "shared/application_nav" %>
+
+          <%= render "shared/application_nav" unless @disable_nav %>
+
           
           <%= yield %>
           
