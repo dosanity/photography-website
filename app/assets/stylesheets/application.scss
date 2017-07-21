@@ -89,7 +89,7 @@ h6, .h6,
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: rgba(255,255,255,.75);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
   font-size: 20px;
@@ -233,8 +233,9 @@ h1 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  //background: image-url('Northernlights.jpg') no-repeat;
+  background: image-url('Timpanogos.jpg') no-repeat;
   background-size: cover;
+  background-attachment:scroll;
 }
 
 .app-footer {
@@ -248,7 +249,7 @@ h1 {
 
 .tech-news > .card {
   padding: 30px;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .tech-news a {
@@ -307,10 +308,10 @@ h1 {
 
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 340px;}
+  to{width: 335px;}
 }
 
 .cards {
-  opacity: 0.5;
+  opacity: 0.7;
   text-align: center;
 }

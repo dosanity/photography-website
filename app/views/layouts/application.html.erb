@@ -22,15 +22,16 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
           
-          <%= video_tag(
+          <%# video_tag(
              'Stars.mp4',
              id: 'background',
              autoplay: true,
              loop: true,
              muted: true,
-             poster: 'Black.jpg'
+             poster: 'Kanarraville.JPG'
             )
             %>
+            <div id="background"></div>
 
           <%= render "shared/application_nav" unless @disable_nav %>
 
