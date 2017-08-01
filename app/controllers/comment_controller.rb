@@ -3,7 +3,7 @@ class CommentController < ApplicationController
 
   def create
     @comment = @blog.comments.new(comment_params)
-    @comment.user_id = current_user.id
+    @comment.user_id = current_user.id 
     @comment.save
     if @comment.save
       redirect_to blog_path(@blog), :notice => 'Comment Posted'
@@ -15,7 +15,7 @@ class CommentController < ApplicationController
   
   def destroy
       @comment = @blog.comments.find(params[:id])
-      if @comment.user_id == current_user.id
+      if @comment.user_id == current_user.id || logged_in?(:site_admin)
       @comment.destroy
         redirect_to blog_path(@blog), :notice => 'Comment Deleted' 
       else

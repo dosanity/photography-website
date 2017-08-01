@@ -16,7 +16,7 @@
             
           </div>
           
-           <%= link_to fa_icon('trash'), blog_comment_path(@blog, comment), method: :delete if comment.user_id == current_user.id %>
+           <%= link_to fa_icon('trash'), blog_comment_path(@blog, comment), method: :delete if comment.user_id == current_user.id  || logged_in?(:site_admin)  %>
         </div>
       </div>
     </div>
