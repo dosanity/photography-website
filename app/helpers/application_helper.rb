@@ -27,7 +27,7 @@ module ApplicationHelper
         title: 'Home'
       },
       {
-        url: about_me_path,
+        url: about_path,
         title: 'About'
       },
       {
@@ -43,7 +43,7 @@ module ApplicationHelper
         title: 'Portfolio'
       },
       {
-        url: tech_news_path,
+        url: news_path,
         title: 'Central'
       },
     ]

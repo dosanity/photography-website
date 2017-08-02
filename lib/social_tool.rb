@@ -9,6 +9,9 @@ module SocialTool
 
     client.search("#photography", result_type: 'recent').take(6).collect do |tweet|
       "#{tweet.user.screen_name}: #{tweet.text}"
+    #client.user_timeline("@do_sanity").take(6).collect do |tweet|
+      #"#{tweet.user.screen_name}: #{tweet.text}"
+    
     end
   end
 end
