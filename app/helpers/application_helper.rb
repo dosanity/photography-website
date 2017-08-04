@@ -1,8 +1,6 @@
 module ApplicationHelper
   def login_helper style = ''
     if current_user.is_a?(GuestUser)
-      (link_to "Register", new_user_registration_path, class: style) +
-      " ".html_safe +
       (link_to "Login", new_user_session_path, class: style)
     else
       link_to "Logout", destroy_user_session_path, method: :delete, class: style
@@ -52,18 +50,10 @@ module ApplicationHelper
   def nav1_items
     [
       {
-          url: root_path,
-          title: 'Home'
-        },
-      {
           url: portfolios_path,
           title: 'Portfolio'
-        },
-      {
-          url: contact_path,
-          title: 'Contact'
-        },
-      ]
+        }
+    ]
   end
 
   def nav1_helper style, tag_type
