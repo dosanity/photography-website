@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'news', to: 'pages#tech_news'
+  get 'edit', to: 'pages#edit'
 
   resources :blogs do
     member do
