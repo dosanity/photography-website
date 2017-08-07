@@ -20,6 +20,12 @@ Rails.application.routes.draw do
     resources :comment 
   end
   
+  resources :portfolio do
+    member do
+      get :toggle_status
+    end
+  end
+  
   post '/blogs/:blog_id/comment' => 'comment#create', :as => 'create_blog_comment'
   
   #mount ActionCable.server => '/cable'
