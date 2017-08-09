@@ -17,6 +17,12 @@
 //  font-family: 'Raleway', sans-serif;
 //}
 
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -132,4 +138,5 @@ footer p {
 
 .text-color {
   color: #ccc;
+  font-family: 'Raleway';
 }

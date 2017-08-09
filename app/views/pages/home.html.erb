@@ -1,43 +1,15 @@
 <div>
   <% home_path %>
-  <%= render "shared/application_nav1" %>
   <div class="inner cover">
     <h1 class="cover-heading">Photography</h1>
     <br>
     <p class="line-1 anim-typewriter">Photographer based in Salt Lake City, Utah</p>
+    <br>
     <p class="lead">
-      <button
-        class="btn btn-lg btn-secondary btn1"
-        type="button"
-        data-toggle="collapse"
-        data-target="#camera"
-        aria-expanded="false"
-        aria-controller="camera"
-      >
-        More Info
-      </button>
+      <%= link_to "Portfolio", portfolios_path, class: "btn btn-lg button btn-custom" %>
     </p>
     
-    <p>
-      <div class="collapse" id="camera">
-        <ol class="list-unstyled cards card card-block">
-
-          <li><%= link_to "Portfolio", portfolios_path, class: "btn btn-lg btn-secondary btn-custom" %></li>
-          <br>
-          <li><%= link_to "Contact", contact_path, class: "btn btn-lg btn-secondary btn-custom" %></li>
-          <br>
-          <li><%= link_to "Central", news_path, class: "btn btn-lg btn-secondary btn-custom" %></li>
-          <br>
-          <li><%= link_to "About", about_path, class: "btn btn-lg btn-secondary btn-custom" %></li>
-          <br>
-          <li><%= link_to "Blog", blogs_path, class: "btn btn-lg btn-secondary btn-custom" %></li>
-          
-        </ol>
-      </div>
-
-      <div class="collapse" id="contact">
-      </div>
-    </p>
+    <br>
     <br>
     
   </div>

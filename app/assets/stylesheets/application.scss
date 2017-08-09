@@ -1,6 +1,7 @@
 @import "bootstrap";
 @import "font-awesome";
 @import "gritter";
+
 /*
  * Globals
  */
@@ -61,7 +62,7 @@ h6, .h6,
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .cover-container {
   margin-right: auto;
@@ -311,18 +312,15 @@ h1 {
   to{width: 325px;}
 }
 
-.cards {
+.btn-custom {
   opacity: 0.7;
   text-align: center;
-}
-
-.btn-custom {
-  background-color: #e7e7e7;;
-  width: 100%;
+  font-size: 24px;
+  width: 250px;
 }
 
 .cover-heading {
-  
+  height: center;
 }
 
 .nav-login {
@@ -330,4 +328,25 @@ h1 {
     display: block;
     margin: 0 auto;
     width: center;
+}
+
+.navrow {
+  text-align: left;
+}
+
+.button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #000000;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.bold {
+  font-weight: bold;
+  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Raleway', sans-serif;
 }
