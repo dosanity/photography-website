@@ -140,3 +140,25 @@ footer p {
   color: #ccc;
   font-family: 'Raleway';
 }
+
+.button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #000000;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+}
+
+.button1:hover {
+    background-color: #008CBA;
+    color: white;
+}
