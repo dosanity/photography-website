@@ -49,25 +49,6 @@ module ApplicationHelper
       },
     ]
   end
-  
-  def nav1_items
-    [
-      {
-          url: portfolios_path,
-          title: 'Portfolio'
-        }
-    ]
-  end
-
-  def nav1_helper style, tag_type
-    nav_links = ''
-
-    nav1_items.each do |item|
-      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
-  end
-
-    nav_links.html_safe
-  end
 
 
   def nav_helper style, tag_type
