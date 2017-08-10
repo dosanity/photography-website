@@ -145,6 +145,7 @@ footer p {
     background-color: white; 
     color: black; 
     border: 2px solid #000000;
+    font-weight: bold;
 }
 
 .button:hover {
@@ -153,8 +154,10 @@ footer p {
 }
 
 .button1 {
-    background-color: #008CBA; 
-    color: white; 
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    font-weight: bold;
 }
 
 .button1:hover {
