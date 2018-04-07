@@ -49,14 +49,14 @@ puts "10 blog posts created"
 
 1.times do |skill|
   Skill.create!(
-    title: "Nikon",
-    percent_utilized: 75
+    title: "Adobe Lightroom",
+    percent_utilized: 100
     )
 end
  
 1.times do |skill|
   Skill.create!(
-    title: "Canon",
+    title: "Adobe Photoshop",
     percent_utilized: 25
     )
 end
