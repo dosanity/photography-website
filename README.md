@@ -1,5 +1,8 @@
 # Photography Portfolio Website
-This is a simple website using [Bootstrap 4][bootstrap-home] ruby gem for Ruby on Rails (Sprockets) application for static content that includes personal information, a blog, a photography portfolio, and related news to key terms from Twitter. It was created as the basis for my own website, but everyone is welcome to use it. The implementation strives to be simple and free of unnecessary dependencies.
+
+> A website with multiple functionalities
+
+This is a website using Bootstrap 4 ruby gem for Ruby on Rails (Sprockets) application for static content that includes personal information, a blog, a photography portfolio, and related news to key terms from [Twitter](https://twitter.com/). It was created as the basis for [my own website](http://www.dosanity.com/), but everyone is welcome to use it. The implementation strives to be simple and free of unnecessary dependencies.
 
 ## Overview
 - An easy way to create a simple, secure website with a blog
