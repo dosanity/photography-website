@@ -22,3 +22,6 @@ module DevcampPortfolio
     config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
+
+# config/application.rb
+config.assets.initialize_on_precompile = false
