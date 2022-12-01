@@ -20,3 +20,4 @@
 //= require_tree .
 //= require bootstrap-sprockets
 
+socket = io.listen(process.env.PORT);
